@@ -1,0 +1,184 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main1"
+    tools:context="com.example.app.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignRight="@+id/ab2"
+        android:layout_toRightOf="@+id/textView1"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="18dp"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
+        android:text="题目："
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/ab2"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_alignBaseline="@+id/ab1"
+        android:layout_alignBottom="@+id/ab1"
+        android:layout_alignLeft="@+id/button2"
+        android:background="#00CED1"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:onClick="onaButtonClicked"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/ab4"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_alignBaseline="@+id/ab3"
+        android:layout_alignBottom="@+id/ab3"
+        android:layout_alignLeft="@+id/ab2"
+        android:background="#00CED1"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:onClick="onaButtonClicked"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/ab3"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_alignLeft="@+id/ab1"
+        android:layout_below="@+id/ab1"
+        android:layout_marginTop="21dp"
+        android:background="#00CED1"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:onClick="onaButtonClicked"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/ab1"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="52dp"
+        android:background="#00CED1"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:onClick="onaButtonClicked"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="26dp"
+        android:layout_marginLeft="28dp"
+        android:background="#7CFC00"
+        android:textColor="#000000"
+        android:text="开始答题" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="38dp"
+        android:background="#7CFC00"
+        android:textColor="#000000"
+        android:text="进入游戏" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/spinner1"
+        android:layout_toLeftOf="@+id/button2"
+        android:textSize="30sp"
+        android:background="#FFFACD"
+        android:text="请选择题数："
+        android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/button2"
+        android:layout_alignRight="@+id/ab4"
+        android:layout_marginBottom="38dp"
+        android:background="#000000"
+        
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/spinner1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="63dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/sb3"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_alignLeft="@+id/sb2"
+        android:layout_below="@+id/sb2"
+        android:layout_marginTop="27dp"
+        android:background="#9BCD9B"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:text="困难" />
+
+    <Button
+        android:id="@+id/sb2"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_alignLeft="@+id/sb1"
+        android:layout_below="@+id/ab2"
+        android:background="#9AC0CD"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:text="普通" />
+
+    <Button
+        android:id="@+id/sb1"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:background="#98FB98"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:text="简单" />
+
+</RelativeLayout>

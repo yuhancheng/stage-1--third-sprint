@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/jiemian2"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:textSize="30sp"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
+        android:text="欢迎使用"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="76dp"
+        android:textSize="20sp"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
+        android:text="    进入界面后先输入题数(>5)，出题后选择正确的答案。全答对了证明你对于四则运算已经十分熟悉了，不然则要继续努力，重新回答，直到全对为止！"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/e1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:background="#36648B"
+        android:text="进入练习"
+        android:textColor="#000000"
+        android:textSize="32sp" />
+
+</RelativeLayout>
